@@ -9,30 +9,18 @@
 	</head>
 	<body>
 
-		<!-- Header -->
-			<header id="header" class="preview">
-				<div class="inner">
-					<div class="content">
-						<h1>Canapé</h1>
-						<h2>Mess Management System</h2>
-					</div>
-					<a href="index.html" class="button hidden"><span>Let's Go</span></a>
-				</div>
-			</header>
 
 		<!-- Main -->
 			<div id="preview">
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2>Canapé</h2>
+							<h2>Canapé Admin</h2>
 						</header>
-						<p>Skip your Meal</p>
-						<form action="thanks.html" method="post">
-							<input type="text" label="Name" name="name" placeholder="Name" required /><br />
-							<input type="text" label="Roll No" name="rollno" placeholder="Roll No" required onkeypress='return event.charCode >= 48 && event.charCode <= 57' /><br />
-							<select name="hostel" required>
-								<option value="">-- Select Hostel --</option>
+						<p>Admin Panel</p>
+						<form action="admin.html" method="post">
+							<select name="hostel">
+								<option value="0">-- Select Hostel --</option>
 								<option value="1">A</option>
 								<option value="2">B</option>
 								<option value="3">C</option>
@@ -49,18 +37,30 @@
 								<option value="14">N</option>
 								<option value="15">PG</option>
 							</select><br />
-							<input type="date" name="date" id="today" required /><br />
-							<select name="meal" required>
-								<option value="">-- Select Meal --</option>
-								<option value="1">Breakfast</option>
-								<option value="2">Lunch</option>
-								<option value="3">Dinner</option>
-							</select><br />
-							<input type="submit" name="dopost" value="Submit" />
+							<input type="date" name="date" id="today" /><br />
+							<input type="submit" name="dopost" value="View Records" />
 							<?php 
 								
 							?>
-						</form>
+						</form><br />
+						<p>Meals Skipped</p>
+						<div style="overflow-x:auto;">
+						<table class="table-wrapper">
+							<tr>
+								<th>Breakfast</th>
+								<td>45</td>
+							</tr>
+							<tr>
+								<th>Lunch</th>
+								<td>23</td>
+							</tr>
+							<tr>
+								<th>Dinner</th>
+								<td>31</td>
+							</tr>
+						</table>
+						</div>
+						<input type="button" value="Download XLSX" onclick="location.href='record.xlsx'">
 					</div>
 				</div>
 			</div>
