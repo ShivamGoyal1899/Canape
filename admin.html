@@ -19,8 +19,8 @@
 						</header>
 						<p>Admin Panel</p>
 						<form action="admin.html" method="post">
-							<select name="hostel">
-								<option value="0">-- Select Hostel --</option>
+							<select name="hostel" required>
+								<option value="">-- Select Hostel --</option>
 								<option value="1">A</option>
 								<option value="2">B</option>
 								<option value="3">C</option>
@@ -38,10 +38,7 @@
 								<option value="15">PG</option>
 							</select><br />
 							<input type="date" name="date" id="today" /><br />
-							<input type="submit" name="dopost" value="View Records" />
-							<?php 
-								
-							?>
+							<input type="button" name="dopost" value="View Records" onclick="location.href='#'" />
 						</form><br />
 						<p>Meals Skipped</p>
 						<div style="overflow-x:auto;">
