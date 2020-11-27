@@ -21,48 +21,22 @@
 			</header>
 
 		<!-- Main -->
-        <div id="preview">
-            <div class="inner">
-                <div class="content">
-                    <header>
-                        <h2>Canapé</h2>
-                    </header>
-                    <p>Hi Shivam! Here's today's Menu.</p>
-                    <div style="overflow-x:auto;">
-                        <table class="table-wrapper">
-                            <tr>
-                                <th>Breakfast</th>
-                            </tr>
-                            <tr>
-                                <td>Paneer Parantha<br />Omlette<br />Cold Coffee<br />Dalia</td>
-                            </tr>
-                            <tr>
-                                <th>Lunch</th>
-                            </tr>
-                            <tr>
-                                <td>Pav Bhaji<br />Rooh Afza Drink</td>
-                            </tr>
-                            <tr>
-                                <th>Dinner</th>
-                            </tr>
-                            <tr>
-                                <td>Jeera Rice<br />Roti<br />Moong Dal<br />Gravy Soya Chaap<br />Gulab Jamun</td>
-                            </tr>
-                        </table>
-                    </div><br />
-                    <p>Wanna Skip Meal?</p>
-                    <div>
-                        <input type="button" value="Skip Meal" onclick="location.href='skip.html'">
-                    </div>
-                    <br />
-                    <p>More Actions</p>
-                    <div>
-                        <input type="button" value="Feedback" onclick="location.href='feedback.html'">
-                        <input type="button" value="Logout" onclick="location.href='index.html'">
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div id="preview">
+			<div class="inner">
+				<div class="content">
+					<header>
+						<h2>Canapé</h2>
+					</header>
+					<p>Skip your Meal</p>
+					<form action="thanks.html" method="post">
+                        <input type="text" label="Name" name="name" placeholder="Name" required /><br />
+                        <input type="text" label="Email" name="email" placeholder="Email" required /><br />
+						<textarea rows=6 label="Feedback" name="message" placeholder="Write your valuable Feedback here..."></textarea><br />
+						<input type="button" name="dopost" value="Submit" onclick="location.href='thanks.html'" />
+					</form>
+				</div>
+			</div>
+		</div>
 			
 		<!-- Footer -->
 			<footer id="footer">
