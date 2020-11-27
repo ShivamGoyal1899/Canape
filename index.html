@@ -22,40 +22,26 @@
 			</header>
 
 		<!-- Main -->
-			<div id="preview">
-				<div class="inner">
-					<div class="content">
-						<header>
-							<h2>Canapé</h2>
-						</header>
-						<p>What's in Menu Today?</p>
-						<div style="overflow-x:auto;">
-						<table class="table-wrapper">
-							<tr>
-								<th>Breakfast</th>
-							</tr>
-							<tr>
-								<td>Paneer Parantha<br />Omlette<br />Cold Coffee<br />Dalia</td>
-							</tr>
-							<tr>
-								<th>Lunch</th>
-							</tr>
-							<tr>
-								<td>Pav Bhaji<br />Rooh Afza Drink</td>
-							</tr>
-							<tr>
-								<th>Dinner</th>
-							</tr>
-							<tr>
-								<td>Jeera Rice<br />Roti<br />Moong Dal<br />Gravy Soya Chaap<br />Gulab Jamun</td>
-							</tr>
-						</table>
-						</div><br />
-						<p>Wanna Skip your Meal?</p>
-						<input type="button" value="Skip Meal" onclick="location.href='skip.html'">
-					</div>
+		<div id="preview">
+			<div class="inner">
+				<div class="content">
+					<header>
+						<h2>Canapé</h2>
+					</header>
+					<p>Login</p>
+					<form action="menu.html" method="post">
+						<input type="text" label="Email" name="email" placeholder="Email" required /><br />
+						<input type="password" label="Password" name="password" placeholder="Password"/><br />
+						<select name="usertype" id="usertype" required>
+							<option value="">-- User Type --</option>
+							<option value="1">Student</option>
+							<option value="2">Admin</option>
+						</select><br />
+					<input type="button" name="dopost" value="Login" onclick="if ($('#usertype option:selected').text() === 'Admin'){location.href='admin.html'}else{location.href='menu.html'}" />
+					</form>
 				</div>
 			</div>
+		</div>
 			
 		<!-- Footer -->
 			<footer id="footer">
@@ -68,13 +54,13 @@
 					<div class="copyright">
 						<h3>Follow Developer</h3>
 						<ul class="icons">
-							<li><a href="https://facebook.com/ShivamGoyal1899" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-							<li><a href="https://twitter.com/ShivamGoyal1899" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/ShivamGoyal1899" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-							<li><a href="https://instagram.com/ShivamGoyal1899" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-							<li><a href="https://linkedin.com/in/ShivamGoyal1899" class="icon fa-linkedin" target="_blank"><span class="label">Dribbble</span></a></li>
+							<li><a href="https://go.itsshivam.com/facebook" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://go.itsshivam.com/twitter" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://go.itsshivam.com/github" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="https://go.itsshivam.com/instagram" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://go.itsshivam.com/linkedin" class="icon fa-linkedin" target="_blank"><span class="label">Dribbble</span></a></li>
 						</ul>
-						<span>Hand Crafted with <span style="color: ">&hearts;</span> in India by Shivam Goyal</span>
+						<span>Hand Crafted with <span>&hearts;</span> in India by <a href="https://itsshivam.com" target="_blank">Shivam Goyal</a></span>
 					</div>
 				</div>
 			</footer>
